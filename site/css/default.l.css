@@ -103,12 +103,11 @@ Typography and Buttons
 .blue-text {
     color: #41b4de !important; }
 
-.maroon-text {
-    color: #a82259 !important; }
 
-.title-text {
+.maroon-text {
     font-weight: bold;
     text-transform: uppercase;
+    color: #a82259;
     font-family: "Roboto", sans-serif;
     font-size: 14px; }
 
@@ -124,9 +123,6 @@ Typography and Buttons
 
 p {
     color: #404041; }
-
-.white {
-    color: #ffffff; }
 
 .no-border {
     border: 0 !important; }
@@ -533,20 +529,20 @@ p {
     font-family: "Roboto", sans-serif;
     transition: all 0.3s ease-in-out; }
 .button-default:hover, .button-white:hover, .button-green:hover, .button-orange:hover, .button-maroon:hover  {
-    background: #a82259;
-    color: #ffffff; }
+    background: white;
+    color: #a82259; }
 
 .main-body .mktoForm .button-default, .main-body .mktoForm .button-white, .main-body .mktoForm .button-green, .main-body .mktoForm .button-orange, .main-body .mktoForm .button-maroon {
     margin-bottom: 20px; }
 
 .button-white {
     background: transparent;
-    border-color: #ffffff;
-    color: #ffffff; }
+    border-color: #c12766;
+    color: #c12766; }
 .button-white:hover {
-    background: #ffffff;
-    border-color: #ffffff;
-    color: #a82259; }
+    background: #a82259;
+    border-color: #a82259;
+    color: white; }
 
 .button-green {
     background: #3fae2a;
@@ -571,9 +567,9 @@ p {
     border-color: #c12766;
     color: white; }
 .button-maroon:hover {
-    background: #ffffff;
-    border-color: #c12766;
-    color: #c12766; }
+    background: #a82259;
+    border-color: #a82259;
+    color: white; }
 
 .loadcustomer.loader {
     position: relative;
@@ -921,10 +917,7 @@ section {
     vertical-align: middle; }
 
 .bg-img {
-    overflow: hidden;
-}
-
-
+    overflow: hidden; }
 .bg-img img {
     transition: all 0.5s ease; }
 
@@ -3674,21 +3667,10 @@ ACF Section: 'Get Started Column' | careers/get-started-block.php | carrers-get-
 ACF Section: 'events'
 ========================================================================== */
 
-.darken {
-    background: #707070;
-    color: whitesmoke;
-}
-.disclaimer{
-    font-size:16px;
-}
-.apache-logo button {
-    background: transparent;
-    border-color: transparent;
-    color: transparent;
-}
+
 
 .protocols-main {
-    clear: both;
+    height: 384px;
     color: #a82259;
     background: white;
 }
@@ -3746,7 +3728,7 @@ ACF Section: 'events'
     .protocols-main .three-col-row .col-three:hover .hover-btn {
         transform: translateY(-75px); } }
 .protocols-main .three-col-row .v-middle-wrapper {
-    background: rgba(255, 255, 255, 0); }
+    background: rgba(0, 0, 0, 0.6); }
 .protocols-main .three-col-row .v-middle-wrapper .v-middle-inner {
     max-width: 340px;
     margin: auto; }
@@ -7251,13 +7233,13 @@ ACF Section: 'Secondary Fix Links' | career-quick-links.php | secondary-fix-link
     text-align: center;
     border-bottom: 4px solid #dad9d6; }
 .fixed-anchor ul li.active {
-    border-bottom: 4px solid #c12766; }
+    border-bottom: 4px solid #456b7e; }
 .fixed-anchor ul li a {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: black;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 12px;
+    line-height: 14px;
     display: table-cell;
     vertical-align: middle;
     padding: 0; }
@@ -9483,7 +9465,7 @@ Grid With Image ( used originally in the contact us page
 
 /* Disclaimer */
 .disclaimer {
-    padding: 5px 0; }
+    padding: 20px 0; }
 .disclaimer p {
     font-size: 12px;
     font-style: italic;

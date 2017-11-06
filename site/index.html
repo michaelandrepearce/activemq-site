@@ -1,38 +1,40 @@
 ---
 layout: default
-title: Apache Metron Big Data Security
+title: Apache ActiveMQ
 overview: true
 ---
 
 <section class="hero-second-level no-padding">
     <div class="bg-img">
-        <img src="/img/metron_datacenter.jpg" alt="UNLOCK THE POWER OF YOUR DATA" style="width: 100%; left: 0px;">
+        <img src="/img/activemq/activemq_desktop_background_dark_grey.png" alt="OPEN SOURCE MESSAGE BROKER" style="width: 100%; left: 0px; ">
     </div>
     <div class="v-middle-wrapper">
         <div class="v-middle-inner">
             <div class="v-middle">
-              <h1>real-time big data security </h1>
-                <a href="https://github.com/apache/metron" target="_blank"><button type="button" class="button-default">GitHub</button></a>
-                <a href="https://cwiki.apache.org/confluence/display/METRON/Community+Resources" target="_blank"><button type="button" class="button-default">Community Home</button></a>
+                <img src="img/activemq/activemq_logo_white.png" height="100px" width="500px" alt="APACHE ACTIVEMQ OPEN SOURCE MESSAGE BROKER">
+                <br>
+                <a href="/broker/Artemis" target="_blank"><button type="button" class="button-default">Artemis</button></a>
+                <a href="/broker/classic" target="_blank"><button type="button" class="button-default">Classic</button></a>
                 
                                
             </div>
         </div>
     </div>
-</section><section class="cta-bar text-center">
+</section>
+<section class="cta-bar text-center">
     <p>
         <span>
             <img src="/img/metron_cloud.png" alt="cloud">
         </span>
-        <span>Updated Documentation</span>
+        <span>Download Latest Release</span>
     </p>
-    <a href="/documentation"><button type="button" class="button-default">Docs Home</button></a>
+    <a href="/download"><button type="button" class="button-white">ActiveMQ Artemis 2.4.0</button></a>
 </section><section class="no-padding">
       <div class="fixed-anchor" style="min-height: 99px;">
         <div class="fixed-links" style="top: 63px; transition: top 0.5s ease;">
             <ul>
                 <li class=""><a href="#what">What is it?</a></li>
-                <li class=""><a href="#personas">Benefits</a></li>
+                <li class=""><a href="#protocols">Protocols</a></li>
             </ul>
         </div>
     </div>  
@@ -40,17 +42,27 @@ overview: true
 
 <section class="hero-second-level no-padding" id="what">
     <div class="bg-img">
-        <img src="/img/metron_sky.png" alt="What Apache Metron Does" style="width: 100%; left: 0px;">
+        <img src="/img/metron_sky.png" alt="What Apache ActiveMQ Does" style="width: 100%; left: 0px;">
     </div>
     <div class="v-middle-wrapper">
         <div class="v-middle-inner">
-            <div class="v-middle text-center">
-              <h1>What Apache Metron Does </h1>
+            <div class="v-middle text-center white-text">
+              <h1>What Apache ActiveMQ Does </h1>
               <br />
                       
-            <p>Apache Metron provides a scalable advanced security analytics framework built with the Hadoop Community evolving from the Cisco OpenSOC Project. A cyber security application framework that provides organizations the ability to detect cyber anomalies and enable organizations to rapidly respond to identified anomalies.</p>
+            <p class="white">
+                Apache ActiveMQ is an open source project that provides a multi-protocol asynchronous messaging system.
+                <br>
+                <br>
+                It can be run as standalone or embeddable, it has very high performance, ability to be clustered.
+                <br>
+                <br>
+                Apache ActiveMQ Artemis is fully JMS 2.0 spec compliant
+                <br>
+                Apache ActiveMQ Classic is JMS 1.1 compliant only.
+            </p>
                 <div class="hover-btn text-center">
-                        <a class="button-default" href="https://cwiki.apache.org/confluence/display/METRON/About+Metron" target="_blank"> MORE</a>
+                        <a class="button-default" href="about" target="_blank"> MORE</a>
                 </div>   
             </div>
         </div>
@@ -59,11 +71,11 @@ overview: true
     </div>
 </section>
 
-<section class="events-section feature" id="personas">
+<section class="events-section protocols-main" id="protocols">
     <div class="wrapper">
         <div class="text-center">
-            <a href="https://cwiki.apache.org/confluence/display/METRON/Metron+Benefits"
-            class="white-text" target="new"> <h2>BENEFITS </h2>
+            <a href="/clients"
+            class="maroon-text title-text" target="new"><br><h1>PROTOCOLS </h1>
             </a>
         </div>
 
@@ -74,99 +86,107 @@ overview: true
                     <div class="v-middle-inner">
                         <div class="v-middle">
                             <div class="move-up">
-                                <img src="/img/persona-1.png" alt="SOC Analyst"><br /><br />
-                                <h5 class="bold blue-text">SOC Analyst</h5>
-                                <h6>Don’t spend days looking at alerts created by rules when only a few alerts matter</h6>
+                                <img src="/img/activemq/core.png" alt="CORE PROTOCOL"><br /><br />
+                                <h5 class="bold maroon-text">CORE</h5>
+                                <h6>This is the ActiveMQ Artemis broker CORE protocol, allowing clients to talk natively with the broker.</h6>
                             </div>
                         </div>
                     </div>
                     <div class="hover-btn text-center">
-                        <a class="button-default" href="https://cwiki.apache.org/confluence/display/METRON/Metron+User+Personas+And+Benefits#MetronUserPersonasAndBenefits-SOCAnalyst" target="_blank">LEARN MORE</a>
+                        <a class="button-maroon" href="/clients/core/" target="_blank">LEARN MORE</a>
                     </div>
                 </div>
+            </div>
 
-            </div>
             <div class="col-three">
                 <div class="v-middle-wrapper">
                     <div class="v-middle-inner">
                         <div class="v-middle">
                             <div class="move-up">
-                                <img src="/img/persona-2.png" alt="SOC Investigator"><br /><br />
-                                <h5 class="bold blue-text">SOC Investigator</h5>
-                                <h6>Metron enables massive amounts of data to identify and triage anomalies</h6>
+                                <img src="/img/activemq/amqp.png" alt="AMQP"><br /><br />
+                                <h5 class="bold maroon-text">AMQP</h5>
+                                <h6>The Advanced Message Queuing Protocol is an open standard application layer protocol for message-oriented middleware</h6>
                             </div>
                         </div>
                     </div>
                     <div class="hover-btn text-center">
-                        <a class="button-default" href="https://cwiki.apache.org/confluence/display/METRON/Metron+User+Personas+And+Benefits#MetronUserPersonasAndBenefits-SOCInvestigator" target="_blank">LEARN MORE</a>
+                        <a class="button-maroon" href="/client/amqp" target="_blank">LEARN MORE</a>
                     </div>
                 </div>
             </div>
+
+
             <div class="col-three">
                 <div class="v-middle-wrapper">
                     <div class="v-middle-inner">
                         <div class="v-middle">
                             <div class="move-up">
-                                <img src="/img/persona-3.png" alt="SOC Manager"><br /><br />
-                                <h5 class="bold blue-text">SOC Manager</h5>
-                                <h6>Automatically create incidents/cases with integrated workflow systems</h6>
+                                <img src="/img/activemq/mqtt.png" alt="MQTT"><br /><br />
+                                <h5 class="bold maroon-text">MQTT</h5>
+                                <h6>MQTT is a lightweight protocol, designed for constrained devices, low-bandwidth, high-latency or unreliable networks.</h6>
                             </div>
                         </div>
                     </div>
                     <div class="hover-btn text-center">
-                        <a class="button-default" href="https://cwiki.apache.org/confluence/display/METRON/Metron+User+Personas+And+Benefits#MetronUserPersonasAndBenefits-SOCManager" target="_blank">LEARN MORE</a>
+                        <a class="button-maroon" href="/clients/mqtt" target="_blank">LEARN MORE</a>
                     </div>
                 </div>
             </div>
+
+
+
         </div>
         <div class="three-col-row top-border benefits">
 
-            <div class="col-three">
-                <div class="v-middle-wrapper">
-                    <div class="v-middle-inner">
-                        <div class="v-middle">
-                            <div class="move-up">
-                                <img src="/img/persona-4.png" alt="Forensic Investigator"><br /><br />
-                                <h5 class="bold blue-text">Forensic Investigator</h5>
-                                <h6>“Just in time evidence collection response” transforms data in real-time</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hover-btn text-center">
-                        <a class="button-default" href="https://cwiki.apache.org/confluence/display/METRON/Metron+User+Personas+And+Benefits#MetronUserPersonasAndBenefits-ForensicInvestigator" target="_blank">LEARN MORE</a>
-                    </div>
-                </div>
 
-            </div>
             <div class="col-three">
                 <div class="v-middle-wrapper">
                     <div class="v-middle-inner">
                         <div class="v-middle">
                             <div class="move-up">
-                                <img src="/img/persona-5.png" alt="Security Platform Engineer"><br /><br />
-                                <h5 class="bold blue-text">Security Platform Engineer</h5>
-                                <h6>Single platform to manage and operate the ingestion, processing of cyber data</h6>
+                                <img src="/img/activemq/OpenWire.png" alt="OpenWire"><br /><br />
+                                <h5 class="bold maroon-text">OpenWire</h5>
+                                <h6>OpenWire is ActiveMQ Classic's cross language protocol, it is supported in ActiveMQ Artemis for compatibility</h6>
                             </div>
                         </div>
                     </div>
                     <div class="hover-btn text-center">
-                        <a class="button-default" href="https://cwiki.apache.org/confluence/display/METRON/Metron+User+Personas+And+Benefits#MetronUserPersonasAndBenefits-SecurityPlatformOperationsEngineer" target="_blank">LEARN MORE</a>
+                        <a class="button-maroon" href="/clients/openwire" target="_blank">LEARN MORE</a>
                     </div>
                 </div>
             </div>
+
+
             <div class="col-three">
                 <div class="v-middle-wrapper">
                     <div class="v-middle-inner">
                         <div class="v-middle">
                             <div class="move-up">
-                                <img src="/img/persona-6.png" alt="Security Platform Engineer"><br /><br />
-                                <h5 class="bold blue-text">Security Data Scientist</h5>
-                                <h6>Perform data science lifecycle activities, train, evaluate and score analytical models</h6>
+                                <img src="/img/activemq/stomp.png" alt="STOMP"><br /><br />
+                                <h5 class="bold maroon-text">STOMP</h5>
+                                <h6>Simple Text Oriented Message Protocol, is a simple text-based protocol, designed for working with message-oriented middleware</h6>
                             </div>
                         </div>
                     </div>
                     <div class="hover-btn text-center">
-                        <a class="button-default" href="https://cwiki.apache.org/confluence/display/METRON/Metron+User+Personas+And+Benefits#MetronUserPersonasAndBenefits-SecurityDataScientist" target="_blank">LEARN MORE</a>
+                        <a class="button-maroon" href="/clients/stomp" target="_blank">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-three">
+                <div class="v-middle-wrapper">
+                    <div class="v-middle-inner">
+                        <div class="v-middle">
+                            <div class="move-up">
+                                <img src="/img/activemq/rest.png" alt="REST"><br /><br />
+                                <h5 class="bold maroon-text">REST</h5>
+                                <h6>Expose messaging over a RESTful interface, allowing complete interopability for any language , even Linux CURL protocol</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hover-btn text-center">
+                        <a class="button-maroon" href="/clients/rest" target="_blank">LEARN MORE</a>
                     </div>
                 </div>
             </div>
