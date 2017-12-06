@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_no_breadcrumb
 title: Apache ActiveMQ
 overview: true
 ---
@@ -13,10 +13,8 @@ overview: true
             <div class="v-middle">
                 <img src="img/activemq/activemq_logo_white.png" height="100px" width="500px" alt="APACHE ACTIVEMQ OPEN SOURCE MESSAGE BROKER">
                 <br>
-                <a href="/broker/Artemis" target="_blank"><button type="button" class="button-default">Artemis</button></a>
-                <a href="/broker/classic" target="_blank"><button type="button" class="button-default">Classic</button></a>
-                
-                               
+                <a href="/projects/classic" target="_blank"><button type="button" class="button-default">Classic</button></a>
+                <a href="/projects/artemis" target="_blank"><button type="button" class="button-default">Artemis</button></a>
             </div>
         </div>
     </div>
@@ -26,49 +24,62 @@ overview: true
         <span>
             <img src="/img/metron_cloud.png" alt="cloud">
         </span>
-        <span>Download Latest Release</span>
+        <span>Download Latest Releases</span>
     </p>
-    <a href="/download"><button type="button" class="button-white">ActiveMQ Artemis 2.4.0</button></a>
+    <a href="/projects/classic/download"><button type="button" class="button-white">ActiveMQ Classic 5.15.2</button></a>
+    <a href="/projects/artemis/download"><button type="button" class="button-white">ActiveMQ Artemis 2.4.0</button></a>
+
 </section><section class="no-padding">
       <div class="fixed-anchor" style="min-height: 99px;">
         <div class="fixed-links" style="top: 63px; transition: top 0.5s ease;">
             <ul>
-                <li class=""><a href="#what">What is it?</a></li>
+                <li class=""><a href="#features">Features</a></li>
                 <li class=""><a href="#protocols">Protocols</a></li>
             </ul>
         </div>
     </div>  
 </section>
 
-<section class="hero-second-level no-padding" id="what">
+<section class="hero-second-level no-padding" id="features">
     <div class="bg-img">
         <img src="/img/metron_sky.png" alt="What Apache ActiveMQ Does" style="width: 100%; left: 0px;">
     </div>
-    <div class="v-middle-wrapper">
+
+    <div class="wrapper">
+
+    <div class="three-col-row ">
+        <div class="v-middle-wrapper">
         <div class="v-middle-inner">
             <div class="v-middle text-center white-text">
-              <h1>What Apache ActiveMQ Does </h1>
-              <br />
-                      
-            <p class="white">
-                Apache ActiveMQ is an open source project that provides a multi-protocol asynchronous messaging system.
-                <br>
-                <br>
-                It can be run as standalone or embeddable, it has very high performance, ability to be clustered.
-                <br>
-                <br>
-                Apache ActiveMQ Artemis is fully JMS 2.0 spec compliant
-                <br>
-                Apache ActiveMQ Classic is JMS 1.1 compliant only.
-            </p>
-                <div class="hover-btn text-center">
-                        <a class="button-default" href="about" target="_blank"> MORE</a>
-                </div>   
+              <h1>Features</h1>
+                <div class="three-col-row">
+                    <div class="col-three">
+                        <img src="/img/features/icons8-guarantee-filled-50.png"><br/><br/><h6>Standards Based</h6>
+                    </div>
+                    <div class="col-three">
+                        <img src="/img/features/icons8-speed-50.png"><br/><br/><h6>Super Fast</h6>
+                    </div>
+                    <div class="col-three">
+                        <img src="/img/features/icons8-bulletproof-vest-filled-50.png"><br/><br/><h6>Bullet Proof</h6>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="two-col-row top-border">
+                    <div class="col-two">
+                        <img src="/img/features/icons8-puzzle-50-4.png"><br/><br/><h6>Pluggable</h6>
+                    </div>
+                    <div class="col-two">
+                        <img src="/img/features/icons8-administrative-tools-50.png"><br/><br/><h6>Easy To Manage</h6>
+                    </div>
+                </div>
             </div>
-        </div>
-
-         
+         </div>
+            </div>
     </div>
+        </div>
 </section>
 
 <section class="events-section protocols-main" id="protocols">
@@ -192,3 +203,4 @@ overview: true
             </div>
         </div>
     </div>
+</section>

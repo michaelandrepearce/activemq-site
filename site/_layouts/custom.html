@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<section class="hero-second-level no-padding">
+    <div class="bg-img">
+        <img src="/img/activemq/activemq_desktop_background_white.png" alt="OPEN SOURCE MESSAGE BROKER" style="width: 100%; left: 0px; ">
+    </div>
+    <div class="v-middle-wrapper">
+        <div class="v-middle-inner">
+            <div class="v-middle">
+                <h1 class="black">{{ page.title }}</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="no-padding">
+    <div class="fixed-anchor" style="min-height: 99px;">
+        <div class="fixed-links" style="top: 63px; transition: top 0.5s ease;">
+            <ul>
+                {% for p in page.sections %}
+                <li class="">
+                    <a href="#{{ p.link }}">{{ p.name }}</a>
+                </li>
+                {% endfor %}
+
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="standalone">
+    <div class="wrapper markdown-section">
+        {{ content }}
+        <div class="clear"></div>
+
+    </div>
+</section>
+
