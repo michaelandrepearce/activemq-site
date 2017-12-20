@@ -662,6 +662,19 @@ ACF Section: 'Highlight Box' | highlight-box.php
 .logo a img {
     width: 100%; }
 
+.tag-line {
+    background: white;
+    padding-left: 20px;
+}
+
+nav .tag-line {
+    float: left;
+    vertical-align: middle;
+    line-height: inherit;
+    display: inline-block;
+    margin: 0;
+    padding: 0; }
+
 .menu-wrapper {
     background: white;
     padding-left: 20px; }

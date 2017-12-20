@@ -1,0 +1,1700 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Release Guide · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Features/Performance/activemq-performance-module-users-manual.html" />
+    
+    
+    <link rel="prev" href="wire-protocol.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../index.md">
+            
+                <span>
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../Overview/news.html">
+            
+                <a href="../Overview/news.html">
+            
+                    
+                    News
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../Features/new-features.html">
+            
+                <a href="../Features/new-features.html">
+            
+                    
+                    New Features
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../Using ActiveMQ/getting-started.html">
+            
+                <a href="../Using ActiveMQ/getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../Community/faq.html">
+            
+                <a href="../Community/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../Community/articles.html">
+            
+                <a href="../Community/articles.html">
+            
+                    
+                    Articles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../Community/books.html">
+            
+                <a href="../Community/books.html">
+            
+                    
+                    Books
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../Overview/download.html">
+            
+                <a href="../Overview/download.html">
+            
+                    
+                    Download
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" >
+            
+                <a target="_blank" href="http://www.apache.org/licenses/">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Sub Projects</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <a target="_blank" href="http://activemq.apache.org/artemis/">
+            
+                    
+                    Artemis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <a target="_blank" href="http://activemq.apache.org/apollo">
+            
+                    
+                    Apollo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <a target="_blank" href="http://activemq.apache.org/cms/">
+            
+                    
+                    CMS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <a target="_blank" href="http://activemq.apache.org/nms/">
+            
+                    
+                    NMS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Community</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../Community/support.html">
+            
+                <a href="../Community/support.html">
+            
+                    
+                    Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../Community/contributing.html">
+            
+                <a href="../Community/contributing.html">
+            
+                    
+                    Contributing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../Community/discussion-forums.html">
+            
+                <a href="../Community/discussion-forums.html">
+            
+                    
+                    Discussion Forums
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../Community/mailing-lists.html">
+            
+                <a href="../Community/mailing-lists.html">
+            
+                    
+                    Mailing Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../Site/Navigation/irc.html">
+            
+                <a href="../Site/Navigation/irc.html">
+            
+                    
+                    IRC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" >
+            
+                <a target="_blank" href="http://javabot.evanchooly.com/logs/%23apache-activemq/today">
+            
+                    
+                    IRC Log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../Community/security-advisories.html">
+            
+                <a href="../Community/security-advisories.html">
+            
+                    
+                    Security Advisories
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../site.html">
+            
+                <a href="../site.html">
+            
+                    
+                    Site
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" >
+            
+                <a target="_blank" href="http://www.apache.org/foundationCommunity/Community/sponsorship.md">
+            
+                    
+                    Sponsorship
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../Community/projects-using-activemq.html">
+            
+                <a href="../Community/projects-using-activemq.html">
+            
+                    
+                    Projects Using ActiveMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../Community/users.html">
+            
+                <a href="../Community/users.html">
+            
+                    
+                    Users
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../Community/team.html">
+            
+                <a href="../Community/team.html">
+            
+                    
+                    Team
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="../Index/thanks.html">
+            
+                <a href="../Index/thanks.html">
+            
+                    
+                    Thanks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Features</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../Features/Message Features/advisory-message.html">
+            
+                <a href="../Features/Message Features/advisory-message.html">
+            
+                    
+                    Advisory Message
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../Features/clustering.html">
+            
+                <a href="../Features/clustering.html">
+            
+                    
+                    Clustering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../Connectivity/cross-language-clients.html">
+            
+                <a href="../Connectivity/cross-language-clients.html">
+            
+                    
+                    Cross Language Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../Features/enterprise-integration-patterns.html">
+            
+                <a href="../Features/enterprise-integration-patterns.html">
+            
+                    
+                    Enterprise Integration Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../Features/jmx.html">
+            
+                <a href="../Features/jmx.html">
+            
+                    
+                    JMX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../Connectivity/jms-to-jms-bridge.html">
+            
+                <a href="../Connectivity/jms-to-jms-bridge.html">
+            
+                    
+                    JMS to JMS Bridge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../Features/Clustering/masterslave.html">
+            
+                <a href="../Features/Clustering/masterslave.html">
+            
+                    
+                    MasterSlave
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="../Features/Consumer Features/message-groups.html">
+            
+                <a href="../Features/Consumer Features/message-groups.html">
+            
+                    
+                    Message Groups
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="../Features/Clustering/networks-of-brokers.html">
+            
+                <a href="../Features/Clustering/networks-of-brokers.html">
+            
+                    
+                    Networks of Brokers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="../Features/performance.html">
+            
+                <a href="../Features/performance.html">
+            
+                    
+                    Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="../Features/persistence.html">
+            
+                <a href="../Features/persistence.html">
+            
+                    
+                    Persistence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="../Features/security.html">
+            
+                <a href="../Features/security.html">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="../Features/Destination Features/virtual-destinations.html">
+            
+                <a href="../Features/Destination Features/virtual-destinations.html">
+            
+                    
+                    Virtual Destinations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="../Features/visualisation.html">
+            
+                <a href="../Features/visualisation.html">
+            
+                    
+                    Visualisation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.15" data-path="../features.html">
+            
+                <a href="../features.html">
+            
+                    
+                    More ...
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Connectivity</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../Connectivity/ajax.html">
+            
+                <a href="../Connectivity/ajax.html">
+            
+                    
+                    Ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../Connectivity/Protocols/amqp.html">
+            
+                <a href="../Connectivity/Protocols/amqp.html">
+            
+                    
+                    AMQP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../Connectivity/Containers/axis-and-cxf-Community/support.md">
+            
+                <span>
+            
+                    
+                    Axis and CXF Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../Connectivity/Cross Language Clients/c-integration.html">
+            
+                <a href="../Connectivity/Cross Language Clients/c-integration.html">
+            
+                    
+                    C Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../Connectivity/Cross Language Clients/activemq-c-clients.html">
+            
+                <a href="../Connectivity/Cross Language Clients/activemq-c-clients.html">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" >
+            
+                <a target="_blank" href="http://activemq.apache.org/nms/">
+            
+                    
+                    C# and .Net Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" >
+            
+                <a target="_blank" href="http://activemq.apache.org/cms/">
+            
+                    
+                    CMS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../Connectivity/Containers/j2ee.html">
+            
+                <a href="../Connectivity/Containers/j2ee.html">
+            
+                    
+                    J2EE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../Connectivity/Containers/jboss-integration.html">
+            
+                <a href="../Connectivity/Containers/jboss-integration.html">
+            
+                    
+                    JBoss Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" >
+            
+                <a target="_blank" href="http://docs.codehaus.org/display/JETTY/Integrating+with+ActiveMQ">
+            
+                    
+                    Jetty
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="../Connectivity/Containers/jndi-Community/support.md">
+            
+                <span>
+            
+                    
+                    JNDI Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" >
+            
+                <a target="_blank" href="http://activemq.apache.org/nms/">
+            
+                    
+                    NMS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="../Connectivity/Protocols/rest.html">
+            
+                <a href="../Connectivity/Protocols/rest.html">
+            
+                    
+                    REST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="../Connectivity/Protocols/rss-and-atom.html">
+            
+                <a href="../Connectivity/Protocols/rss-and-atom.html">
+            
+                    
+                    RSS and Atom
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="../Connectivity/Containers/spring-Community/support.md">
+            
+                <span>
+            
+                    
+                    Spring Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.16" data-path="../Connectivity/Protocols/stomp.html">
+            
+                <a href="../Connectivity/Protocols/stomp.html">
+            
+                    
+                    Stomp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.17" data-path="../Connectivity/Containers/tomcat.html">
+            
+                <a href="../Connectivity/Containers/tomcat.html">
+            
+                    
+                    Tomcat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.18" data-path="../Features/Unix/unix-service.html">
+            
+                <a href="../Features/Unix/unix-service.html">
+            
+                    
+                    Unix Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.19" data-path="../Connectivity/Containers/weblogiConnectivity/Cross Language Clients/c-integration.md">
+            
+                <span>
+            
+                    
+                    WebLogic Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.20" data-path="../Connectivity/Protocols/xmpp.html">
+            
+                <a href="../Connectivity/Protocols/xmpp.html">
+            
+                    
+                    XMPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.21" data-path="../connectivity.html">
+            
+                <a href="../connectivity.html">
+            
+                    
+                    More ...
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Using ActiveMQ 5</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../Using ActiveMQ 5/version-5-Using ActiveMQ/getting-started.md">
+            
+                <span>
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../Using ActiveMQ 5/version-5-Using ActiveMQ/initial-Community/FAQ/configuration.md">
+            
+                <span>
+            
+                    
+                    Initial Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../version-5-Using ActiveMQ/run-broker.md">
+            
+                <span>
+            
+                    
+                    Running a Broker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../Community/FAQ/Using Apache ActiveMQ/how-do-i-embed-a-broker-inside-a-connection.html">
+            
+                <a href="../Community/FAQ/Using Apache ActiveMQ/how-do-i-embed-a-broker-inside-a-connection.html">
+            
+                    
+                    Embedded Brokers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../Community/FAQ/Using Apache ActiveMQ/activemq-command-line-tools-reference.html">
+            
+                <a href="../Community/FAQ/Using Apache ActiveMQ/activemq-command-line-tools-reference.html">
+            
+                    
+                    Command Line Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="../Using ActiveMQ 5/configuring-version-5-transports.html">
+            
+                <a href="../Using ActiveMQ 5/configuring-version-5-transports.html">
+            
+                    
+                    Configuring Transports
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="../version-5-Using ActiveMQ/examples.md">
+            
+                <span>
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="../Using ActiveMQ 5/version-5-Using ActiveMQ/web-samples.md">
+            
+                <span>
+            
+                    
+                    Web Samples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="../Community/FAQ/Using Apache ActiveMQ/how-can-i-monitor-activemq.html">
+            
+                <a href="../Community/FAQ/Using Apache ActiveMQ/how-can-i-monitor-activemq.html">
+            
+                    
+                    Monitoring the Broker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="../version-5-Using ActiveMQ/xml-Community/FAQ/configuration.md">
+            
+                <span>
+            
+                    
+                    Xml Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="../Using ActiveMQ/xml-reference.html">
+            
+                <a href="../Using ActiveMQ/xml-reference.html">
+            
+                    
+                    Xml Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="../using-activemq-5.html">
+            
+                <a href="../using-activemq-5.html">
+            
+                    
+                    More ...
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Tools</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../Tools/web-console.html">
+            
+                <a href="../Tools/web-console.html">
+            
+                    
+                    Web Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../Features/Performance/activemq-performance-module-users-manual.html">
+            
+                <a href="../Features/Performance/activemq-performance-module-users-manual.html">
+            
+                    
+                    Maven2 Performance Plugin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Support</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" >
+            
+                <a target="_blank" href="http://issues.apache.org/jira/browse/AMQ">
+            
+                    
+                    Issues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" >
+            
+                <a target="_blank" href="http://issues.apache.org/activemq/browse/AMQ?report=com.atlassian.jira.plugin.system.project:roadmap-panel">
+            
+                    
+                    Roadmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" >
+            
+                <a target="_blank" href="http://issues.apache.org/activemq/browse/AMQ?report=com.atlassian.jira.plugin.system.project:changelog-panel">
+            
+                    
+                    Change log
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Developers</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="source.html">
+            
+                <a href="source.html">
+            
+                    
+                    Source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="building.html">
+            
+                <a href="building.html">
+            
+                    
+                    Building
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="developer-guide.html">
+            
+                <a href="developer-guide.html">
+            
+                    
+                    Developer Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="becoming-a-committer.html">
+            
+                <a href="becoming-a-committer.html">
+            
+                    
+                    Becoming a committer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="code-overview.html">
+            
+                <a href="code-overview.html">
+            
+                    
+                    Code Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" data-path="wire-protocol.html">
+            
+                <a href="wire-protocol.html">
+            
+                    
+                    Wire Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="10.7" data-path="release-guide.html">
+            
+                <a href="release-guide.html">
+            
+                    
+                    Release Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Tests</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../Features/Performance/activemq-performance-module-users-manual.html">
+            
+                <a href="../Features/Performance/activemq-performance-module-users-manual.html">
+            
+                    
+                    Maven2 Performance Plugin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="benchmark-tests.html">
+            
+                <a href="benchmark-tests.html">
+            
+                    
+                    Benchmark Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="jmeter-system-tests.html">
+            
+                <a href="jmeter-system-tests.html">
+            
+                    
+                    JMeter System Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="jmeter-performance-tests.html">
+            
+                <a href="jmeter-performance-tests.html">
+            
+                    
+                    JMeter Performance Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="integration-tests.html">
+            
+                <a href="integration-tests.html">
+            
+                    
+                    Integration Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Project Reports</li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="junit-reports.html">
+            
+                <a href="junit-reports.html">
+            
+                    
+                    JUnit Reports
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="source-xref.html">
+            
+                <a href="source-xref.html">
+            
+                    
+                    Source XRef
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.3" data-path="test-Developers/source-xref.md">
+            
+                <span>
+            
+                    
+                    Test Source XRef
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.4" data-path="../Using ActiveMQ/xml-reference.html">
+            
+                <a href="../Using ActiveMQ/xml-reference.html">
+            
+                    
+                    Xml Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Release Guide</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>Apache ActiveMQ &#x2122; -- Release Guide </p>
+<p><a href="developers.md">Developers</a> &gt; <a href="DevelopersDevelopers/Developers/release-guide.md">Release Guide</a></p>
+<p>How to create and announce an ActiveMQ release. This release is based on <a href="http://maven.apache.org/developers/release/apache-release.html" target="_blank">General guide for releasing Maven-based project at Apache</a> , so be sure to check it out before continuing and meet all prerequisites.</p>
+<h2 id="maven-2-setup">Maven 2 Setup</h2>
+<p>Before you deploy anything to the maven repository using Maven 2, you should configure your ~/.m2/settings.xml file<br>so that the file permissions of the deployed artifacts are group writeable. If you do not do this, other developers will not able to overwrite your SNAPSHOT releases with newer versions.</p>
+<settings>
+  ...
+  <servers>
+
+    <server>
+      <id>apache.snapshots.https</id>
+      <username>dejanb</username>
+    </server>
+    <!\-\- To publish a website of some part of Maven -->
+    <server>
+      <id>apache.website</id>
+      <username>dejanb</username>
+      <filepermissions>664</filepermissions>
+      <directorypermissions>775</directorypermissions>
+    </server>
+    <!\-\- To stage a release of some part of Maven -->
+    <server>
+      <id>apache.releases.https</id>
+      <username>dejanb</username>
+    </server>
+    <!\-\- To stage a website of some part of Maven -->
+    <server>
+      <id>stagingSite</id> <!-- must match hard-coded repository identifier in site:stage-deploy -->
+      <username>dejanb</username>
+      <filepermissions>664</filepermissions>
+      <directorypermissions>775</directorypermissions>
+    </server>
+
+  </servers>
+  ...
+</settings>
+
+<p>It is also essential that you configure your umask to 2 on people.apache.org for non-interactive login. If your shell is tcsh you can edit .cshrc to include</p>
+<p>umask 2</p>
+<p>Other shell initialization files may interfere with this setting but if this is the only umask setting it appears to work. Instructions for other shells would be welcome.</p>
+<h3 id="additional-local-configuration-for-using-release-and-staging-plugins">Additional local configuration for using release and staging plugins.</h3>
+<p>To effectively use the release and staging plugins you need some information about where the staging will happen and signing information for gpg. Your ~/.m2/settings.xml should contain a profile like this:</p>
+<settings>
+    <profiles>
+        <profile>
+          <id>apache-release</id>
+          <properties>
+             <gpg.passphrase>secretPhrase</gpg.passphrase>
+         </properties>
+        </profile>
+    </profiles>
+ ...
+</settings>
+
+<h2 id="creating-the-activemq-release">Creating the ActiveMQ Release</h2>
+<p>The release plugin will prompt for a release version, tag and next release version. Use a three digit release version of the form: 5.x.x and for the tag use a string of the form: activemq-5.x.x. The next version string should use the two digit from: 5.x-SNAPSHOT as this can be consistent for future SNAPSHOT releases.</p>
+<ol>
+<li><p>Verify the to-be-released version identifier exists in the <a href="https://git-wip-us.apache.org/repos/asf?p=activemq.git;a=blob;f=activemq-spring/src/main/resources/META-INF/spring.schemas;hb=HEAD" target="_blank">META-INF/spring.schemas</a> mappings file AND <a href="https://git-wip-us.apache.org/repos/asf?p=activemq.git;a=blob;f=activemq-osgi/src/main/resources/META-INF/spring.schemas;hb=HEAD" target="_blank">activemq-osgi/src/main/resources/META-INF/spring.schemas</a> file, if not add it and commit. It should contain:</p>
+<p>http\://activemq.apache.org/schema/core/activemq-core-${pom.version}.xsd=activemq.xsd</p>
+</li>
+<li><p>Verify headers with <a href="http://incubator.apache.org/rat/apache-rat-plugin/usage.html" target="_blank">rat</a></p>
+<p>mvn -e apache-rat:check
+grep -e &apos; !?????&apos; target/rat.txt -- will show any files without licenses</p>
+</li>
+<li><p>Do a release dry run to check for problems</p>
+<p>mvn release:prepare -DdryRun=true</p>
+<p>Check that you are happy with the results. The poms for the proposed tags will be in pom.xml.tag. When you like the results, clean up:</p>
+<p>mvn release:clean</p>
+</li>
+<li><p>Prepare the release</p>
+<p>mvn release:prepare</p>
+<p>This will create the tag in git and leave various stuff around locally to direct the perform phase.</p>
+</li>
+<li><p>Make a local copy of the release configuration in case something goes wrong</p>
+<p>cd ..
+cp -r activemq-release activemq-release-prepared
+cd activemq-release</p>
+</li>
+<li><p>Perform the release to the staging repo</p>
+<p>mvn release:perform</p>
+<p>This uses both the activemq release profile which directs building source jars, javadoc jars, and signing everything, and also the settings release profile that says where to<br>put stuff and how to sign it.</p>
+</li>
+<li><p>Close the staging repository<br>Quote from the <a href="http://maven.apache.org/developers/release/apache-release.html" target="_blank">Maven release guide for Apache projects</a></p>
+<blockquote>
+<p>Login to <a href="https://repository.apache.org" target="_blank">https://repository.apache.org</a> using your Apache LDAP credentials. Click on &quot;Staging&quot;. Then click on &quot;maven&quot; in the list of repositories. In the panel below you should see an open repository that is linked to your username and ip. Right click on this repository and select &quot;Close&quot;. This will close the repository from future deployments and make it available for others to view. If you are staging multiple releases together, skip this step until you have staged everything. Enter the name and version of the artifact being released in the &quot;Description&quot; field and then click &quot;Close&quot;. This will make it easier to identify it later.</p>
+</blockquote>
+<p>See the image in the original guide for more info.</p>
+</li>
+<li><p>Verify staged artifacts<br>Quote from the <a href="http://maven.apache.org/developers/release/apache-release.html" target="_blank">original guide</a></p>
+<blockquote>
+<p>If you click on your repository, a tree view will appear below. You can then browse the contents to ensure the artifacts are as you expect them. Pay particular attention to the existence of *.asc (signature) files. If the you don&apos;t like the content of the repository, right click your repository and choose &quot;Drop&quot;. You can then rollback your release and repeat the process.<br>Note the repository URL, you will need this in your vote email.</p>
+</blockquote>
+</li>
+<li><p>Build the site from the tag that release:perform checked out into target/checkout in the previous step.<br>Note that the -Prelease profile is needed to specify the profile in settings.xml that configures the staging location.</p>
+<p>cd target/checkout
+mvn site -Prelease</p>
+</li>
+<li><p>Populate the Javadocs site in svn</p>
+<p>svn co <a href="https://svn.apache.org/repos/infra/websites/production/activemq/content" target="_blank">https://svn.apache.org/repos/infra/websites/production/activemq/content</a>
+cd content/maven
+mkdir <version></version></p>
+<h1 id="copy-over-apidocs-folder-that-was-created-by-the-site-plugin-to-apidocs">copy over apidocs folder that was created by the site plugin to <version>/apidocs</version></h1>
+<p>svn add <version>
+svn rm apidocs
+ln -s <version>/apidocs apidocs
+svn add apidocs
+# and commit once it looks good.</version></version></p>
+</li>
+<li><p>Stage the official release artifacts in the SVN dist dev area for folks to test and vote on, using the helper script already in the repo:</p>
+<p>svn co <a href="https://dist.apache.org/repos/dist/dev/activemq/activemq/" target="_blank">https://dist.apache.org/repos/dist/dev/activemq/activemq/</a>
+cd activemq
+./prepare-release.sh <nexus-staging-repo-url> <version>
+# Example: ./prepare-release.sh <a href="https://repository.apache.org/content/repositories/orgapacheactivemq-1149" target="_blank">https://repository.apache.org/content/repositories/orgapacheactivemq-1149</a> 5.15.1
+svn add <version>
+and commit once it looks good.</version></version></nexus-staging-repo-url></p>
+</li>
+<li><p>Call a vote on the dev list, listing the great new features of the release.</p>
+</li>
+</ol>
+<h2 id="after-the-vote-passes">After the vote passes</h2>
+<ol>
+<li>Promote the release (i.e. release the staging repository): login to<a href="https://repository.apache.org/" target="_blank">https://repository.apache.org</a>, navigate to the staging repository and click the &quot;release&quot; button. </li>
+<li><p>Copy the staged release files from the SVN dist dev folder to the SVN dist release folder: <a href="https://dist.apache.org/repos/dist/release/activemq/" target="_blank">https://dist.apache.org/repos/dist/release/activemq/</a></p>
+<p>svn cp -m &quot;add files for activemq-<version>&quot; <a href="https://dist.apache.org/repos/dist/dev/activemq/activemq/" target="_blank">https://dist.apache.org/repos/dist/dev/activemq/activemq/</a><version> <a href="https://dist.apache.org/repos/dist/release/activemq/" target="_blank">https://dist.apache.org/repos/dist/release/activemq/</a><version>
+# Example: svn cp -m &quot;add files for activemq-5.15.1&quot; <a href="https://dist.apache.org/repos/dist/dev/activemq/activemq/5.15.1" target="_blank">https://dist.apache.org/repos/dist/dev/activemq/activemq/5.15.1</a> <a href="https://dist.apache.org/repos/dist/release/activemq/5.15.1" target="_blank">https://dist.apache.org/repos/dist/release/activemq/5.15.1</a></version></version></version></p>
+</li>
+<li><p>Populate the schema site in svn</p>
+<p>svn co <a href="https://svn.apache.org/repos/infra/websites/production/activemq/content" target="_blank">https://svn.apache.org/repos/infra/websites/production/activemq/content</a>
+cd content/schema/core
+curl --remote-name-all <a href="https://repository.apache.org/content/repositories/releases/org/apache/activemq/activemq-spring/" target="_blank">https://repository.apache.org/content/repositories/releases/org/apache/activemq/activemq-spring/</a><version>/activemq-spring-<version>{-schema.html,.xsd}{.asc,.asc.md5,.asc.sha1,.sha1,.md5,}
+for i in activemq-spring-5.9.0<em>; do mv -- &quot;$i&quot; &quot;${i//spring/core}&quot;; done;
+svn add activemq-core-5.9.0</em>
+svn rm activemq-core.xsd
+ln -s activemq-core-5.9.0.xsd activemq-core.xsd
+svn add activemq-core.xsd
+# and commit once it looks good.</version></version></p>
+</li>
+<li><p>Continue with the Announcing section below</p>
+</li>
+<li>Created a in progress wiki page for the next release</li>
+<li>Remove any releases from the dist site that are no longer supported and update the wiki page for that release to point to the archives for downloads.</li>
+</ol>
+<h2 id="announcing-the-activemq-release">Announcing the ActiveMQ Release</h2>
+<ol>
+<li>Perform a release in JIRA and create a new release version in JIRA.<ol>
+<li>Move unresolved issues to the next release first, in a bulk (do not send email) update</li>
+<li>You might also want to search for resolved/closed issues with no fix version just in case</li>
+</ol>
+</li>
+<li>Create a download page for the release in the WIKI similar like the <a href="Overview/DownloadOverview/Download/Overview/Download/activemq-530-release.md">ActiveMQ 5.3.0 Release</a>; also update the main <a href="OverviewOverview/Overview/download.md">Download</a> page as appropriate</li>
+<li>Update the <a href="Using%20ActiveMQ/xml-reference.md">Xml Reference</a> page with a link to the HTML and XSD</li>
+<li>Update latest release link on home page</li>
+<li>Change the links for the prior release to reference the archive (at <a href="http://archive.apache.org/dist/activemq/" target="_blank">http://archive.apache.org/dist/activemq/</a>); otherwise, users will not be able to locate the older release for download</li>
+<li>Update <a href="Site/quicklinks.md">QuickLinks</a> and <a href="Overview/javadocs.md">JavaDocs</a> pages</li>
+<li>Mail the <a href="mailto:dev@activemq.codehaus.org" target="_blank">dev</a> &amp; <a href="mailto:user@activemq.codehaus.org" target="_blank">user</a> lists</li>
+<li><a href="http://cwiki.apache.org/confluence/pages/viewrecentblogposts.action?key=ACTIVEMQ" target="_blank">Post</a> a news entry on the WIKI</li>
+<li>tweet</li>
+<li>Have a beer! <img src="https://cwiki.apache.org/confluence/s/en_GB/5997/6f42626d00e36f53fe51440403446ca61552e2a2.1/_/images/icons/emoticons/smile.png" alt="(smile)"></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="wire-protocol.html" class="navigation navigation-prev " aria-label="Previous page: Wire Protocol">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Features/Performance/activemq-performance-module-users-manual.html" class="navigation navigation-next " aria-label="Next page: Maven2 Performance Plugin">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Release Guide","level":"10.7","depth":1,"next":{"title":"Maven2 Performance Plugin","level":"11.1","depth":1,"path":"Features/Performance/activemq-performance-module-users-manual.md","ref":"Features/Performance/activemq-performance-module-users-manual.md","articles":[]},"previous":{"title":"Wire Protocol","level":"10.6","depth":1,"path":"Developers/wire-protocol.md","ref":"Developers/wire-protocol.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Developers/release-guide.md","mtime":"2017-12-20T00:43:15.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-20T02:04:12.690Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

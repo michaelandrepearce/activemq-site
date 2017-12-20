@@ -1,0 +1,1639 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Message Groups · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Clustering/networks-of-brokers.html" />
+    
+    
+    <link rel="prev" href="../Clustering/masterslave.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../index.md">
+            
+                <span>
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../Overview/news.html">
+            
+                <a href="../../Overview/news.html">
+            
+                    
+                    News
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../new-features.html">
+            
+                <a href="../new-features.html">
+            
+                    
+                    New Features
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../Using ActiveMQ/getting-started.html">
+            
+                <a href="../../Using ActiveMQ/getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../Community/faq.html">
+            
+                <a href="../../Community/faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../../Community/articles.html">
+            
+                <a href="../../Community/articles.html">
+            
+                    
+                    Articles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../../Community/books.html">
+            
+                <a href="../../Community/books.html">
+            
+                    
+                    Books
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../../Overview/download.html">
+            
+                <a href="../../Overview/download.html">
+            
+                    
+                    Download
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" >
+            
+                <a target="_blank" href="http://www.apache.org/licenses/">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Sub Projects</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <a target="_blank" href="http://activemq.apache.org/artemis/">
+            
+                    
+                    Artemis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <a target="_blank" href="http://activemq.apache.org/apollo">
+            
+                    
+                    Apollo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <a target="_blank" href="http://activemq.apache.org/cms/">
+            
+                    
+                    CMS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <a target="_blank" href="http://activemq.apache.org/nms/">
+            
+                    
+                    NMS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Community</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../Community/support.html">
+            
+                <a href="../../Community/support.html">
+            
+                    
+                    Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../Community/contributing.html">
+            
+                <a href="../../Community/contributing.html">
+            
+                    
+                    Contributing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../Community/discussion-forums.html">
+            
+                <a href="../../Community/discussion-forums.html">
+            
+                    
+                    Discussion Forums
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../../Community/mailing-lists.html">
+            
+                <a href="../../Community/mailing-lists.html">
+            
+                    
+                    Mailing Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../../Site/Navigation/irc.html">
+            
+                <a href="../../Site/Navigation/irc.html">
+            
+                    
+                    IRC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" >
+            
+                <a target="_blank" href="http://javabot.evanchooly.com/logs/%23apache-activemq/today">
+            
+                    
+                    IRC Log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../../Community/security-advisories.html">
+            
+                <a href="../../Community/security-advisories.html">
+            
+                    
+                    Security Advisories
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../../site.html">
+            
+                <a href="../../site.html">
+            
+                    
+                    Site
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" >
+            
+                <a target="_blank" href="http://www.apache.org/foundationCommunity/Community/sponsorship.md">
+            
+                    
+                    Sponsorship
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../../Community/projects-using-activemq.html">
+            
+                <a href="../../Community/projects-using-activemq.html">
+            
+                    
+                    Projects Using ActiveMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../../Community/users.html">
+            
+                <a href="../../Community/users.html">
+            
+                    
+                    Users
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../../Community/team.html">
+            
+                <a href="../../Community/team.html">
+            
+                    
+                    Team
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="../../Index/thanks.html">
+            
+                <a href="../../Index/thanks.html">
+            
+                    
+                    Thanks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Features</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../Message Features/advisory-message.html">
+            
+                <a href="../Message Features/advisory-message.html">
+            
+                    
+                    Advisory Message
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../clustering.html">
+            
+                <a href="../clustering.html">
+            
+                    
+                    Clustering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../Connectivity/cross-language-clients.html">
+            
+                <a href="../../Connectivity/cross-language-clients.html">
+            
+                    
+                    Cross Language Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../enterprise-integration-patterns.html">
+            
+                <a href="../enterprise-integration-patterns.html">
+            
+                    
+                    Enterprise Integration Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../jmx.html">
+            
+                <a href="../jmx.html">
+            
+                    
+                    JMX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../../Connectivity/jms-to-jms-bridge.html">
+            
+                <a href="../../Connectivity/jms-to-jms-bridge.html">
+            
+                    
+                    JMS to JMS Bridge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../Clustering/masterslave.html">
+            
+                <a href="../Clustering/masterslave.html">
+            
+                    
+                    MasterSlave
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.8" data-path="message-groups.html">
+            
+                <a href="message-groups.html">
+            
+                    
+                    Message Groups
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="../Clustering/networks-of-brokers.html">
+            
+                <a href="../Clustering/networks-of-brokers.html">
+            
+                    
+                    Networks of Brokers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="../performance.html">
+            
+                <a href="../performance.html">
+            
+                    
+                    Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="../persistence.html">
+            
+                <a href="../persistence.html">
+            
+                    
+                    Persistence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="../security.html">
+            
+                <a href="../security.html">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="../Destination Features/virtual-destinations.html">
+            
+                <a href="../Destination Features/virtual-destinations.html">
+            
+                    
+                    Virtual Destinations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="../visualisation.html">
+            
+                <a href="../visualisation.html">
+            
+                    
+                    Visualisation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.15" data-path="../../features.html">
+            
+                <a href="../../features.html">
+            
+                    
+                    More ...
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Connectivity</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../Connectivity/ajax.html">
+            
+                <a href="../../Connectivity/ajax.html">
+            
+                    
+                    Ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../../Connectivity/Protocols/amqp.html">
+            
+                <a href="../../Connectivity/Protocols/amqp.html">
+            
+                    
+                    AMQP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../../Connectivity/Containers/axis-and-cxf-Community/support.md">
+            
+                <span>
+            
+                    
+                    Axis and CXF Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../../Connectivity/Cross Language Clients/c-integration.html">
+            
+                <a href="../../Connectivity/Cross Language Clients/c-integration.html">
+            
+                    
+                    C Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../../Connectivity/Cross Language Clients/activemq-c-clients.html">
+            
+                <a href="../../Connectivity/Cross Language Clients/activemq-c-clients.html">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" >
+            
+                <a target="_blank" href="http://activemq.apache.org/nms/">
+            
+                    
+                    C# and .Net Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" >
+            
+                <a target="_blank" href="http://activemq.apache.org/cms/">
+            
+                    
+                    CMS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../../Connectivity/Containers/j2ee.html">
+            
+                <a href="../../Connectivity/Containers/j2ee.html">
+            
+                    
+                    J2EE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../../Connectivity/Containers/jboss-integration.html">
+            
+                <a href="../../Connectivity/Containers/jboss-integration.html">
+            
+                    
+                    JBoss Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" >
+            
+                <a target="_blank" href="http://docs.codehaus.org/display/JETTY/Integrating+with+ActiveMQ">
+            
+                    
+                    Jetty
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="../../Connectivity/Containers/jndi-Community/support.md">
+            
+                <span>
+            
+                    
+                    JNDI Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" >
+            
+                <a target="_blank" href="http://activemq.apache.org/nms/">
+            
+                    
+                    NMS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="../../Connectivity/Protocols/rest.html">
+            
+                <a href="../../Connectivity/Protocols/rest.html">
+            
+                    
+                    REST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="../../Connectivity/Protocols/rss-and-atom.html">
+            
+                <a href="../../Connectivity/Protocols/rss-and-atom.html">
+            
+                    
+                    RSS and Atom
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="../../Connectivity/Containers/spring-Community/support.md">
+            
+                <span>
+            
+                    
+                    Spring Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.16" data-path="../../Connectivity/Protocols/stomp.html">
+            
+                <a href="../../Connectivity/Protocols/stomp.html">
+            
+                    
+                    Stomp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.17" data-path="../../Connectivity/Containers/tomcat.html">
+            
+                <a href="../../Connectivity/Containers/tomcat.html">
+            
+                    
+                    Tomcat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.18" data-path="../Unix/unix-service.html">
+            
+                <a href="../Unix/unix-service.html">
+            
+                    
+                    Unix Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.19" data-path="../../Connectivity/Containers/weblogiConnectivity/Cross Language Clients/c-integration.md">
+            
+                <span>
+            
+                    
+                    WebLogic Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.20" data-path="../../Connectivity/Protocols/xmpp.html">
+            
+                <a href="../../Connectivity/Protocols/xmpp.html">
+            
+                    
+                    XMPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.21" data-path="../../connectivity.html">
+            
+                <a href="../../connectivity.html">
+            
+                    
+                    More ...
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Using ActiveMQ 5</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../Using ActiveMQ 5/version-5-Using ActiveMQ/getting-started.md">
+            
+                <span>
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../../Using ActiveMQ 5/version-5-Using ActiveMQ/initial-Community/FAQ/configuration.md">
+            
+                <span>
+            
+                    
+                    Initial Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../../version-5-Using ActiveMQ/run-broker.md">
+            
+                <span>
+            
+                    
+                    Running a Broker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../../Community/FAQ/Using Apache ActiveMQ/how-do-i-embed-a-broker-inside-a-connection.html">
+            
+                <a href="../../Community/FAQ/Using Apache ActiveMQ/how-do-i-embed-a-broker-inside-a-connection.html">
+            
+                    
+                    Embedded Brokers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../../Community/FAQ/Using Apache ActiveMQ/activemq-command-line-tools-reference.html">
+            
+                <a href="../../Community/FAQ/Using Apache ActiveMQ/activemq-command-line-tools-reference.html">
+            
+                    
+                    Command Line Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="../../Using ActiveMQ 5/configuring-version-5-transports.html">
+            
+                <a href="../../Using ActiveMQ 5/configuring-version-5-transports.html">
+            
+                    
+                    Configuring Transports
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="../../version-5-Using ActiveMQ/examples.md">
+            
+                <span>
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="../../Using ActiveMQ 5/version-5-Using ActiveMQ/web-samples.md">
+            
+                <span>
+            
+                    
+                    Web Samples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="../../Community/FAQ/Using Apache ActiveMQ/how-can-i-monitor-activemq.html">
+            
+                <a href="../../Community/FAQ/Using Apache ActiveMQ/how-can-i-monitor-activemq.html">
+            
+                    
+                    Monitoring the Broker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="../../version-5-Using ActiveMQ/xml-Community/FAQ/configuration.md">
+            
+                <span>
+            
+                    
+                    Xml Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="../../Using ActiveMQ/xml-reference.html">
+            
+                <a href="../../Using ActiveMQ/xml-reference.html">
+            
+                    
+                    Xml Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="../../using-activemq-5.html">
+            
+                <a href="../../using-activemq-5.html">
+            
+                    
+                    More ...
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Tools</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../../Tools/web-console.html">
+            
+                <a href="../../Tools/web-console.html">
+            
+                    
+                    Web Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../Performance/activemq-performance-module-users-manual.html">
+            
+                <a href="../Performance/activemq-performance-module-users-manual.html">
+            
+                    
+                    Maven2 Performance Plugin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Support</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" >
+            
+                <a target="_blank" href="http://issues.apache.org/jira/browse/AMQ">
+            
+                    
+                    Issues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" >
+            
+                <a target="_blank" href="http://issues.apache.org/activemq/browse/AMQ?report=com.atlassian.jira.plugin.system.project:roadmap-panel">
+            
+                    
+                    Roadmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" >
+            
+                <a target="_blank" href="http://issues.apache.org/activemq/browse/AMQ?report=com.atlassian.jira.plugin.system.project:changelog-panel">
+            
+                    
+                    Change log
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Developers</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../../Developers/source.html">
+            
+                <a href="../../Developers/source.html">
+            
+                    
+                    Source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="../../Developers/building.html">
+            
+                <a href="../../Developers/building.html">
+            
+                    
+                    Building
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="../../Developers/developer-guide.html">
+            
+                <a href="../../Developers/developer-guide.html">
+            
+                    
+                    Developer Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="../../Developers/becoming-a-committer.html">
+            
+                <a href="../../Developers/becoming-a-committer.html">
+            
+                    
+                    Becoming a committer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="../../Developers/code-overview.html">
+            
+                <a href="../../Developers/code-overview.html">
+            
+                    
+                    Code Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" data-path="../../Developers/wire-protocol.html">
+            
+                <a href="../../Developers/wire-protocol.html">
+            
+                    
+                    Wire Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.7" data-path="../../Developers/release-guide.html">
+            
+                <a href="../../Developers/release-guide.html">
+            
+                    
+                    Release Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Tests</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../Performance/activemq-performance-module-users-manual.html">
+            
+                <a href="../Performance/activemq-performance-module-users-manual.html">
+            
+                    
+                    Maven2 Performance Plugin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="../../Developers/benchmark-tests.html">
+            
+                <a href="../../Developers/benchmark-tests.html">
+            
+                    
+                    Benchmark Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="../../Developers/jmeter-system-tests.html">
+            
+                <a href="../../Developers/jmeter-system-tests.html">
+            
+                    
+                    JMeter System Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="../../Developers/jmeter-performance-tests.html">
+            
+                <a href="../../Developers/jmeter-performance-tests.html">
+            
+                    
+                    JMeter Performance Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="../../Developers/integration-tests.html">
+            
+                <a href="../../Developers/integration-tests.html">
+            
+                    
+                    Integration Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Project Reports</li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="../../Developers/junit-reports.html">
+            
+                <a href="../../Developers/junit-reports.html">
+            
+                    
+                    JUnit Reports
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="../../Developers/source-xref.html">
+            
+                <a href="../../Developers/source-xref.html">
+            
+                    
+                    Source XRef
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.3" data-path="../../Developers/test-Developers/source-xref.md">
+            
+                <span>
+            
+                    
+                    Test Source XRef
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.4" data-path="../../Using ActiveMQ/xml-reference.html">
+            
+                <a href="../../Using ActiveMQ/xml-reference.html">
+            
+                    
+                    Xml Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Message Groups</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>Apache ActiveMQ &#x2122; -- Message Groups </p>
+<p><a href="features.md">Features</a> &gt; <a href="consumer-features.md">Consumer Features</a> &gt; <a href="Features/Consumer%20FeaturesFeatures/Consumer%20Features/Features/Consumer%20Features/message-groups.md">Message Groups</a></p>
+<h2 id="message-groups">Message Groups</h2>
+<p>Message Groups are an enhancement to the <a href="Features/Consumer%20Features/exclusive-consumer.md">Exclusive Consumer</a> feature. They provide:</p>
+<ul>
+<li>Guaranteed ordering of the processing of related messages across a single queue.</li>
+<li>Load balancing of the processing of messages across multiple consumers.</li>
+<li>High availability / auto-failover to other consumers if a JVM goes down.</li>
+</ul>
+<p>So logically Message Groups are like a parallel <a href="Features/Consumer%20Features/exclusive-consumer.md">Exclusive Consumer</a>. Rather than all messages going to a single consumer, the standard JMS header <strong><code>JMSXGroupID</code></strong> is used to define which <em>message group</em> the message belongs to. The Message Group feature then ensures that all messages for the <em>same</em> message group will be sent to the <em>same</em> JMS consumer - whilst that consumer stays alive. As soon as the consumer dies another will be chosen.</p>
+<p>Another way of explaining Message Groups is that it provides sticky load balancing of messages across consumers; where the <strong><code>JMSXGroupID</code></strong> is kinda like a HTTP session ID or cookie value and the message broker is acting like a HTTP load balancer.</p>
+<h3 id="example-use-case">Example Use Case</h3>
+<p>Lets say we are doing some kind of order matching system where people are buying and selling things (stocks, shares, placing online bets, whatever). You want to have consumers who match bids and offers for different items (stocks / bets) so they want to keep in RAM for performance a sub-set of the data set. Therefore set the <strong><code>JMSXGroupID</code></strong> to be <strong><code>MSFT</code></strong>, <strong><code>IBM</code></strong>, <strong><code>SUNW</code></strong> and so forth to use the stock symbol to define the message group. (It can be any string whatsoever; maybe combining trading book, trading exchange, date and so forth - the more specific the group ID, the more concurrent you can run). Assume we are buying and selling <strong><code>MSFT</code>, <code>IBM</code>, <code>SUNW</code></strong> shares; the Message Groups feature guarantees that all the <strong><code>MSFT</code></strong> messages will be processed in order by the same consumer; ditto for <strong><code>IBM</code></strong> and <strong><code>SUNW</code></strong>.</p>
+<h3 id="how-message-groups-work">How Message Groups Work</h3>
+<p>When a message is being dispatched to a consumer, the <strong><code>JMSXGroupID</code></strong> is checked. If one is present then the broker checks to see if a consumer owns that message group. Since there could be a large number of message groups hash buckets are used rather than the actual <strong><code>JMSXGroupID</code></strong> string.</p>
+<p>If no consumer is associated with a message group a consumer is chosen. Said JMS <strong><code>MessageConsumer</code></strong> will receive all further messages with the same <strong><code>JMSXGroupID</code></strong> value until:</p>
+<ul>
+<li>the consumer closes (or the client which created the consumer dies etc).</li>
+<li>someone closes the message group by sending a message with a negative value for <strong><code>JMSXGroupSeq</code></strong> (see below for more details).</li>
+</ul>
+<p><strong>Note</strong>: as with message selector matching, grouping based on <strong><code>JMSXGroupID</code></strong> occurs before dispatch on messages in memory. With the default <strong><code>maxPageSize</code></strong> option, large backlogs of messages destined for one group can block receipt of messages to other groups if they don&apos;t all fit in memory. You can change the default <strong><code>maxPageSize</code></strong> setting for destinations as follows:</p>
+<destinationpolicy>
+    <policymap>
+       <policyentries>
+           <policyentry queue="&gt;" maxpagesize="1000">
+       </policyentry></policyentries>
+    </policymap>
+</destinationpolicy>
+
+<h3 id="using-message-groups">Using Message Groups</h3>
+<p>You just need to change your JMS producers to fill in the <strong><code>JMSXGroupID</code></strong> message header with some <strong><code>String</code></strong> value of your choice.</p>
+<p>Example:</p>
+<p>Mesasge message = session.createTextMessage(&quot;<foo>hey</foo>&quot;);
+message.setStringProperty(&quot;JMSXGroupID&quot;, &quot;IBM_NASDAQ_20/4/05&quot;);
+...
+producer.send(message);</p>
+<h3 id="closing-a-message-group">Closing a Message Group</h3>
+<p>You generally don&apos;t need to close a message group; just keep using it. However if you really do want to close a group you can add a negative sequence number.</p>
+<p>Example:</p>
+<p>Mesasge message = session.createTextMessage(&quot;<foo>hey</foo>&quot;);
+message.setStringProperty(&quot;JMSXGroupID&quot;, &quot;IBM_NASDAQ_20/4/05&quot;);
+message.setIntProperty(&quot;JMSXGroupSeq&quot;, -1);
+...
+producer.send(message);</p>
+<p>This then <em>closes</em> the message group so if another message is sent in the future with the same message group ID it will be reassigned to a new consumer.</p>
+<h3 id="implications">Implications</h3>
+<p>Message Groups mean you get the power of <strong>grid</strong> processing of messages across a cluster of consumers with reliability, auto-failover, load balancing but you can also order the processing of messages too. So its the best of both worlds. However using the above example, what Message Groups actually do is to partition your work load across consumers using a user definable partition strategy - the <strong><code>JMSXGroupID</code></strong> value.</p>
+<p>The neat thing about this is that you can do neat things like use lots of RAM caching; keep the order for <strong><code>MSFT</code></strong> in RAM in the <strong><code>MSFT</code></strong> consumer; keep the <strong><code>IBM</code></strong> orders in RAM in the <strong><code>IBM</code></strong> consumer - since the message broker is partitioning for you, you do not have to rely on a distributed cache with inter-cache synchronization and locking to take advantage of caching.</p>
+<p>The great thing is - to the application developer, it looks like a simple 1 consumer world where you process messages and do your job; leaving the broker to do all the hard stuff for you</p>
+<ul>
+<li>partitioning the traffic</li>
+<li>load balancing of message groups across consumers</li>
+<li>auto-failover of groups to different consumers as consumers come and go</li>
+</ul>
+<p>In summary; if ordering or per-message caching and synchronization are in any way important to you then we highly recommend you use message groups to partition your traffic.</p>
+<h3 id="getting-notified-of-ownership-changes-of-message-groups">Getting Notified of Ownership Changes of Message Groups</h3>
+<p>ActiveMQ support a boolean header called <strong><code>JMSXGroupFirstForConsumer</code></strong>. This header is set on the first message sent to a consumer for a particular message group.</p>
+<p>If the JMS connection is using <strong><code>failover:</code></strong> and a temporary network error occurs so that the connection disconnects from the broker and reconnects some time later, a new consumer instance will be created under the covers of the JMS client leading to the possibility of another message with this header being set for the same message group.</p>
+<p>Example:</p>
+<p>String groupId = message.getStringProperty(&quot;JMSXGroupId&quot;);</p>
+<p>if (message.getBooleanProperty(&quot;JMSXGroupFirstForConsumer&quot;)) {
+   // flush cache for groupId
+}</p>
+<p>To flush caches to ensure consistent state when faced with network errors.</p>
+<h3 id="adding-new-consumers">Adding New Consumers</h3>
+<p>If you have existing messages in the broker and add consumers at a later stage, it is a good idea to delay message dispatch start until all consumers are present (or at least to give enough time for them to subscribe). If you don&apos;t do that the first consumer will probably acquire all message groups and all messages will be dispatched to it. You can achieve this by using <strong><code>consumersBeforeDispatchStarts</code></strong> and <strong><code>timeBeforeDispatchStarts</code></strong> <a href="Features/Destination%20Features/per-destination-policies.md">destination policies</a>.</p>
+<p>When both <strong>consumersBeforeDispatchStarts</strong> and <strong>timeBeforeDispatchStarts</strong> are set to a value greater than zero, the dispatching will start as soon as the required number of consumers are present or the timeBeforeDispatchStarts timeout expires. If only consumersBeforeDispatchStarts is set then the timeout for consumers to connect is 1 second. If all consumers disconnect then message dispatch delay will be applied again at the next consumer connection.</p>
+<p>Here&apos;s the example of the destination policy that delays dispatch for <strong><code>200ms</code></strong>:</p>
+<destinationpolicy>
+  <policymap>
+    <policyentries>
+      <policyentry queue="&gt;" timebeforedispatchstarts="200">
+    </policyentry></policyentries>
+  </policymap>
+</destinationpolicy>
+
+<p>The following code snippet shows how to wait for two consumers (or two seconds) before dispatch starts:</p>
+<destinationpolicy>
+  <policymap>
+    <policyentries>
+      <policyentry queue="&gt;" consumersbeforedispatchstarts="2" timebeforedispatchstarts="2000">
+    </policyentry></policyentries>
+  </policymap>
+</destinationpolicy>
+
+<p>As <a href="https://github.com/apache/activemq/blob/master/activemq-unit-tests/src/test/java/org/apache/activemq/usecases/MessageGroupDelayedTest.java" target="_blank">the appropriate test case</a> shows, adding a small time pause before dispatching or setting a minimum consumer number, ensures equal message group distribution.</p>
+<h3 id="competing-demands-of-memory-consumption-load-balancing-complexity-etc">Competing demands of memory consumption, load balancing, complexity, etc.</h3>
+<p>The default behavior which is limited to 1024 message groups in an LRU cache may not match you expectation w.r.t message order... some detail to explain:</p>
+<p>MessageGroupHashBucket and SimpleMessageGroupMap message groups work by associating each group with a consumer.</p>
+<p>SimpleMessageGroupMap keeps track of every group but suffers from unbounded memory use.</p>
+<p>MessageGroupHashBucked keeps track of every group and has bounded memory use.</p>
+<p>CachedMessageGroupMap has bounded memory use, but only keeps track of up to 1024 (or the maximum configured size) groups, then loses track of any groups older than the newest 1024.</p>
+<p>In this way, if there are more groups than the maximum, <strong>ordering will be lost for the oldest groups</strong>.</p>
+<p>Typically users would close groups such that the in memory set can be retained below the configured limits. Some usefull discussion at [ .jira-issue { padding: 0 0 0 2px; line-height: 20px; } .jira-issue img { padding-right: 5px; } .jira-issue .aui-lozenge { line-height: 18px; vertical-align: top; } .jira-issue .icon { background-position: left center; background-repeat: no-repeat; display: inline-block; font-size: 0; max-height: 16px; text-align: left; text-indent: -9999em; vertical-align: text-bottom; } <a href="https://issues.apache.org/jira/browse/AMQ-6851?src=confmacro" target="_blank">AMQ-6851</a> ]</p>
+<h3 id="see">See</h3>
+<ul>
+<li><a href="Community/FAQ/Using%20Apache%20ActiveMQ/how-do-message-groups-compare-to-Features/Consumer%20Features/selectors.md">How do Message Groups compare to Selectors</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Clustering/masterslave.html" class="navigation navigation-prev " aria-label="Previous page: MasterSlave">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Clustering/networks-of-brokers.html" class="navigation navigation-next " aria-label="Next page: Networks of Brokers">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Message Groups","level":"5.8","depth":1,"next":{"title":"Networks of Brokers","level":"5.9","depth":1,"path":"Features/Clustering/networks-of-brokers.md","ref":"Features/Clustering/networks-of-brokers.md","articles":[]},"previous":{"title":"MasterSlave","level":"5.7","depth":1,"path":"Features/Clustering/masterslave.md","ref":"Features/Clustering/masterslave.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Features/Consumer Features/message-groups.md","mtime":"2017-12-20T00:43:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-20T02:04:12.690Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
