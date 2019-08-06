@@ -111,12 +111,12 @@ jQuery(window).load(function () {
          */
 
         if (window_width > 1023) {
-            jQuery('.main-navigation').css('height', "85px");
+            jQuery('.main-navigation').css('height', "50px");
         } else
         if (window_width > 767 && window_width < 1024) {
-            jQuery('.main-navigation').css('height', "85px");
+            jQuery('.main-navigation').css('height', "50px");
         } else {
-            jQuery('.main-navigation').css('height', "71px");
+            jQuery('.main-navigation').css('height', "50px");
         }
 
         /*
